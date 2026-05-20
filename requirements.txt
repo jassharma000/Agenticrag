@@ -1,0 +1,7 @@
+langgraph
+langchain_core
+langchain-openai
+langchain-community
+langchain-pinecone
+pypdf
+rank_bm25
