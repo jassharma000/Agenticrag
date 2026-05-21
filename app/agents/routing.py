@@ -25,3 +25,19 @@ def route_query(state) :
         return "web_search"
     
     return "respond"
+
+MAX_RETRIES = 2
+
+def validate_response(state) :
+
+    validation = state["validation"]
+
+    retries = state.get("retries", 0)
+
+    if validation == "valid":
+        return END
+    
+    if retries >= MAX_RETRIES:
+        return END
+    
+    return "assistant"

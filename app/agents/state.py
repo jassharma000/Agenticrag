@@ -10,3 +10,8 @@ class AgentState(TypedDict):
     
     route : str
     
+    validation : str
+
+    validation_reason : str
+
+    retries : int
