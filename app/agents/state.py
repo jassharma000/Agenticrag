@@ -15,3 +15,13 @@ class AgentState(TypedDict):
     validation_reason : str
 
     retries : int
+
+    critique : str
+
+    improvement_suggestions : str
+
+    plan : list
+
+    current_step : int
+
+    step_results : int

@@ -5,3 +5,4 @@ langchain-community
 langchain-pinecone
 pypdf
 rank_bm25
+streamlit

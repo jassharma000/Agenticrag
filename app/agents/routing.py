@@ -26,6 +26,8 @@ def route_query(state) :
     
     return "respond"
 
+
+#validation routing
 MAX_RETRIES = 2
 
 def validate_response(state) :
@@ -41,3 +43,18 @@ def validate_response(state) :
         return END
     
     return "assistant"
+
+
+def should_continue_plan(state):
+
+    current_step = state.get(
+        "current_step",
+        0
+    )
+
+    plan = state["plan"]
+
+    if current_step >= len(plan):
+        return END
+    
+    return "execu"

@@ -48,7 +48,7 @@ def validator_node(state):
     )
 
     return {
-        "validation" : response.verdict
-        "validation_reason" : response.reason
+        "validation" : response.verdict,
+        "validation_reason" : response.reason,
         "retries" : state.get("retries", 0) +1
     }

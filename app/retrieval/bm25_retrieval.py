@@ -52,4 +52,4 @@ def bm25_search(query, source: str = None):
         return filtered_results
     return results
 
-print(  bm25_search("Rajasthan tenancy rules when did this rule came out"))
+#print(  bm25_search("Rajasthan tenancy rules when did this rule came out"))
